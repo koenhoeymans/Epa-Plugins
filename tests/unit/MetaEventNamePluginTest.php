@@ -18,9 +18,13 @@ class MetaEventNamePluginTest extends \PHPUnit_Framework_TestCase
         $eventDispatcher
             ->expects($this->once())
             ->method('registerForEvent')
-            ->with('Epa\\Api\\NewEventEvent', function () {});
+            ->with(
+                'Epa\\Api\\NewEventEvent',
+                function () {
+                }
+            );
 
-        $this->plugin->registerHandlers($eventDispatcher);
+            $this->plugin->registerHandlers($eventDispatcher);
     }
 
     /**

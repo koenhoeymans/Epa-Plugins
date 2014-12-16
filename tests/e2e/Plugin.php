@@ -9,7 +9,10 @@ class Plugin implements \Epa\Api\Plugin
     public function registerHandlers(\Epa\Api\EventDispatcher $dispatcher)
     {
         $dispatcher->registerForEvent(
-            'MyEventName', function () { $this->wasNotifiedOfMyEventName = true; }
+            'MyEventName',
+            function () {
+                $this->wasNotifiedOfMyEventName = true;
+            }
         );
     }
 

@@ -19,7 +19,9 @@ class MetaEventNamePlugin implements \Epa\Api\Plugin
     {
         $dispatcher->registerForEvent(
             'Epa\\Api\\NewEventEvent',
-            function (\Epa\Api\NewEventEvent $event) { $this->handleEvent($event); }
+            function (\Epa\Api\NewEventEvent $event) {
+                $this->handleEvent($event);
+            }
         );
     }
 
