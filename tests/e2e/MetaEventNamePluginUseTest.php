@@ -1,6 +1,8 @@
 <?php
 
-class EpaPlugins_EndToEndTests_MetaEventNamePluginTest extends PHPUnit_Framework_TestCase
+namespace EpaPlugins;
+
+class MetaEventNamePluginUseTest extends \PHPUnit_Framework_TestCase
 {
     /**
      * @test
@@ -11,10 +13,10 @@ class EpaPlugins_EndToEndTests_MetaEventNamePluginTest extends PHPUnit_Framework
 
         $eventDispatcher->addPlugin(new \EpaPlugins\MetaEventNamePlugin());
 
-        $plugin = new \EpaPlugins\EndToEndTests\Support\Plugin();
+        $plugin = new \EpaPlugins\Plugin();
         $eventDispatcher->addPlugin($plugin);
 
-        $eventDispatcher->notify(new \EpaPlugins\EndToEndTests\Support\Event());
+        $eventDispatcher->notify(new \EpaPlugins\Event());
 
         $this->assertTrue($plugin->wasNotifiedOfMyEventName());
     }

@@ -1,8 +1,8 @@
 <?php
 
-require_once 'TestHelper.php';
+namespace EpaPlugins;
 
-class EpaPlugins_UnitTests_MetaEventNamePluginFactoryTest extends PHPUnit_Framework_TestCase
+class MetaEventNamePluginFactoryTest extends \PHPUnit_Framework_TestCase
 {
     /**
      * @test

@@ -1,6 +1,6 @@
 <?php
 
-namespace EpaPlugins\UnitTests\Support;
+namespace EpaPlugins;
 
 /**
  * @event AbstractEvent

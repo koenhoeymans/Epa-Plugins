@@ -1,8 +1,8 @@
 <?php
 
-require_once 'TestHelper.php';
+namespace EpaPlugins;
 
-class EpaPlugins_UnitTests_MetaEventNamePluginTest extends PHPUnit_Framework_TestCase
+class MetaEventNamePluginTest extends \PHPUnit_Framework_TestCase
 {
     public function setup()
     {
@@ -37,7 +37,7 @@ class EpaPlugins_UnitTests_MetaEventNamePluginTest extends PHPUnit_Framework_Tes
             ->expects($this->once())
             ->method('getEventNames')
             ->will($this->returnValue(array(
-                'EpaPlugins\\UnitTests\\Support\\EventClass',
+                'EpaPlugins\\EventClass',
             )));
 
         $this->plugin->handleEvent($newEventEvent);
@@ -57,7 +57,7 @@ class EpaPlugins_UnitTests_MetaEventNamePluginTest extends PHPUnit_Framework_Tes
             ->expects($this->once())
             ->method('getEventNames')
             ->will($this->returnValue(array(
-                'EpaPlugins\\UnitTests\\Support\\InterfaceWithDocCommentEvent',
+                'EpaPlugins\\InterfaceWithDocCommentEvent',
             )));
 
         $this->plugin->handleEvent($newEventEvent);
@@ -77,7 +77,7 @@ class EpaPlugins_UnitTests_MetaEventNamePluginTest extends PHPUnit_Framework_Tes
             ->expects($this->once())
             ->method('getEventNames')
             ->will($this->returnValue(array(
-                'EpaPlugins\\UnitTests\\Support\\EventExtendingAbstractClassWithEventName',
+                'EpaPlugins\\EventExtendingAbstractClassWithEventName',
             )));
 
         $this->plugin->handleEvent($newEventEvent);
@@ -97,7 +97,7 @@ class EpaPlugins_UnitTests_MetaEventNamePluginTest extends PHPUnit_Framework_Tes
             ->expects($this->once())
             ->method('getEventNames')
             ->will($this->returnValue(array(
-                'EpaPlugins\\UnitTests\\Support\\ExtendingClass',
+                'EpaPlugins\\ExtendingClass',
             )));
 
         $this->plugin->handleEvent($newEventEvent);

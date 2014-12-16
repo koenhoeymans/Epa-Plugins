@@ -1,6 +1,6 @@
 <?php
 
-namespace EpaPlugins\UnitTests\Support;
+namespace EpaPlugins;
 
 class ExtendedClass implements \Epa\Api\Event
 {

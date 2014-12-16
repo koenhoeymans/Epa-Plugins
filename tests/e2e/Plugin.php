@@ -1,6 +1,6 @@
 <?php
 
-namespace EpaPlugins\EndToEndTests\Support;
+namespace EpaPlugins;
 
 class Plugin implements \Epa\Api\Plugin
 {
