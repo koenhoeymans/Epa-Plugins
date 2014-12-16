@@ -7,13 +7,13 @@ namespace EpaPlugins;
  */
 class MetaEventNamePluginFactory
 {
-	/**
-	 * Creates the plugin instance.
-	 * 
-	 * @return \Epa\Api\Plugin
-	 */
-	public static function create()
-	{
-		return new MetaEventNamePlugin();
-	}
+    /**
+     * Creates the plugin instance.
+     *
+     * @return \Epa\Api\Plugin
+     */
+    public static function create()
+    {
+        return new MetaEventNamePlugin();
+    }
 }
