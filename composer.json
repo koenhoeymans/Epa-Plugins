@@ -16,6 +16,6 @@
 		"qualitycheck/qualitycheck": "*"
 	},
 	"autoload": {
-		"psr-0": { "Epa-Plugins": "/" }
+		"psr-4": { "EpaPlugins\\": ["src/", "tests/unit", "tests/e2e"] }
 	}
 }
