@@ -1,7 +1,5 @@
 <?php
 
-require_once 'TestHelper.php';
-
 class EpaPlugins_EndToEndTests_MetaEventNamePluginTest extends PHPUnit_Framework_TestCase
 {
     /**
